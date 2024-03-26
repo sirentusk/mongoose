@@ -10,6 +10,12 @@
     --fifth-colour: #813e2a;
 }
 
+@font-face {	
+	font-family: 'You're So Cool';
+	src: url('fonts/Youre_So_Cool.ttf');
+	font-style: normal;
+}
+
 /* Search Box */
 
 .d-flex {
@@ -51,10 +57,4 @@ h1 {
     text-align: center;
     font-family: 'You're So Cool', fantasy;
     padding: 100px;
-}
-
-@font-face {
-	font-family: 'You're So Cool';
-	src: url('fonts/Youre_So_Cool.ttf');
-	font-style: normal;
 }
