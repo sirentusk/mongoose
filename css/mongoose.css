@@ -38,10 +38,6 @@ header img {
     border-color: --second-color;
 }
 
-.btn-outline-primary {
-    @include button-outline-variant(--first-colour);
-}
-
 a,
 a:link,
 a:visited,
