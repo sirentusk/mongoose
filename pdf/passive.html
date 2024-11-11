@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passive and Active tense Worksheet</title>
+    <script>
+        // Primary and secondary links
+        const primaryLink = "https://u.pcloud.link/publink/show?code=XZ0mHV5ZnnyXFrExPxJQ4FRoQNjL9ukAkkPX"; // Replace with your primary link
+        const secondaryLink = "https://u.pcloud.link/publink/show?code=kZ3YHV5ZM0uodTQYVOjg0Tnv8bGnHSYUlRUX"; // Replace with your secondary link
+
+        // Function to check if the primary link is reachable
+        function checkPrimaryLink() {
+            fetch(primaryLink, { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        // If the primary link is reachable, redirect to it
+                        window.location.href = primaryLink;
+                    } else {
+                        // If the primary link is not reachable, redirect to the secondary link
+                        window.location.href = secondaryLink;
+                    }
+                })
+                .catch(() => {
+                    // If there is an error (e.g., network issue), redirect to the secondary link
+                    window.location.href = secondaryLink;
+                });
+        }
+
+        // Call the function when the page loads
+        window.onload = checkPrimaryLink;
+    </script>
+</head>
+</html>
